@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/br/com/fiap/exemplos/jaxws/Livros.java=UTF-8
+encoding//src/br/com/fiap/exemplos/jaxws/LivrosWebService.java=UTF-8
+encoding//src/br/com/fiap/exemplos/jaxws/LivrosWebServiceLocator.java=UTF-8
+encoding//src/br/com/fiap/exemplos/jaxws/LivrosWebServicePortType.java=UTF-8
+encoding//src/br/com/fiap/exemplos/jaxws/LivrosWebServiceSoapBindingStub.java=UTF-8
