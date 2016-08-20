@@ -1,13 +1,12 @@
+/**
+ * CartaoWebService.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
+
 package br.com.fiap.ws;
 
-import javax.jws.WebMethod;
-import javax.jws.WebParam;
-import javax.jws.WebService;
-
-@WebService
-public interface CartaoWebService {
-	@WebMethod
-	String validarCartao(@WebParam(name = "numero") String numCartao,
-
-			@WebParam(name = "valor") double valor);
+public interface CartaoWebService extends java.rmi.Remote {
+    public java.lang.String validarCartao(java.lang.String numero, double valor) throws java.rmi.RemoteException;
 }

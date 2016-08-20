@@ -4,15 +4,15 @@ import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 
-@WebService(serviceName="cartaoendpoint")
+@WebService(serviceName = "cartaoendpoint")
 public class CartaoWebServiceImpl implements CartaoWebService {
 	@Override
 	@WebMethod
 	public String validarCartao(@WebParam(name = "numero") String numCartao, @WebParam(name = "valor") double valor) {
 		if (numCartao.length() != 16) {
-			return "Cart„o inv·lido";
+			return "Cart√£o inv√°lido";
 		} else {
-			return "DÈbito de " + valor + " efetuado com sucesso";
+			return "D√©bito de " + valor + " efetuado com sucesso";
 		}
 	}
 }
