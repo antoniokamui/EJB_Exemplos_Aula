@@ -10,7 +10,7 @@ package br.com.fiap.ws;
 public interface Cartaoendpoint extends javax.xml.rpc.Service {
     public java.lang.String getCartaoWebServiceImplPortAddress();
 
-    public br.com.fiap.ws.CartaoWebService getCartaoWebServiceImplPort() throws javax.xml.rpc.ServiceException;
+    public br.com.fiap.ws.CartaoWebServiceImpl getCartaoWebServiceImplPort() throws javax.xml.rpc.ServiceException;
 
-    public br.com.fiap.ws.CartaoWebService getCartaoWebServiceImplPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException;
+    public br.com.fiap.ws.CartaoWebServiceImpl getCartaoWebServiceImplPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException;
 }

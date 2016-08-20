@@ -39,7 +39,7 @@ public class CartaoendpointLocator extends org.apache.axis.client.Service implem
         CartaoWebServiceImplPortWSDDServiceName = name;
     }
 
-    public br.com.fiap.ws.CartaoWebService getCartaoWebServiceImplPort() throws javax.xml.rpc.ServiceException {
+    public br.com.fiap.ws.CartaoWebServiceImpl getCartaoWebServiceImplPort() throws javax.xml.rpc.ServiceException {
        java.net.URL endpoint;
         try {
             endpoint = new java.net.URL(CartaoWebServiceImplPort_address);
@@ -50,7 +50,7 @@ public class CartaoendpointLocator extends org.apache.axis.client.Service implem
         return getCartaoWebServiceImplPort(endpoint);
     }
 
-    public br.com.fiap.ws.CartaoWebService getCartaoWebServiceImplPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+    public br.com.fiap.ws.CartaoWebServiceImpl getCartaoWebServiceImplPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
             br.com.fiap.ws.CartaoendpointSoapBindingStub _stub = new br.com.fiap.ws.CartaoendpointSoapBindingStub(portAddress, this);
             _stub.setPortName(getCartaoWebServiceImplPortWSDDServiceName());
@@ -72,7 +72,7 @@ public class CartaoendpointLocator extends org.apache.axis.client.Service implem
      */
     public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         try {
-            if (br.com.fiap.ws.CartaoWebService.class.isAssignableFrom(serviceEndpointInterface)) {
+            if (br.com.fiap.ws.CartaoWebServiceImpl.class.isAssignableFrom(serviceEndpointInterface)) {
                 br.com.fiap.ws.CartaoendpointSoapBindingStub _stub = new br.com.fiap.ws.CartaoendpointSoapBindingStub(new java.net.URL(CartaoWebServiceImplPort_address), this);
                 _stub.setPortName(getCartaoWebServiceImplPortWSDDServiceName());
                 return _stub;
