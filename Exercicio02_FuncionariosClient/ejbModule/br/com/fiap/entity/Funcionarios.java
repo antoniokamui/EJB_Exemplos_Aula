@@ -4,26 +4,18 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "funcionarios", schema = "funcionariosejb")
-public class Funcionarios implements Serializable {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 7233075806919084714L;
+@Table(name = "funcionario", schema = "funcionarioFiap")
+public class Funcionarios implements Serializable{
+	
+	private static final long serialVersionUID = 3044003636565429939L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "ID")
-	private Integer id;
-	
 	@Column(name = "CPF")
-	private Integer cpf;
+	private String cpf;
 
 	@Column(name = "NOME")
 	private String nome;
@@ -33,18 +25,18 @@ public class Funcionarios implements Serializable {
 
 	@Column(name = "SALARIO")
 	private Double salario;
-	
+
 	@Column(name = "IRPF")
 	private Double irpf;
-	
+
 	@Column(name = "INSS")
 	private Double inss;
 
-	public Integer getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
 
-	public void setCpf(Integer cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
 
@@ -87,18 +79,4 @@ public class Funcionarios implements Serializable {
 	public void setInss(Double inss) {
 		this.inss = inss;
 	}
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
-
-	public Integer getId() {
-		return id;
-	}
-
-	public void setId(Integer id) {
-		this.id = id;
-	}
-
-	
 }
