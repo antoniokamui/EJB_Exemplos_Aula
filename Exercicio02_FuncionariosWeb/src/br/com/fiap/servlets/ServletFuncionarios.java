@@ -36,7 +36,7 @@ public class ServletFuncionarios extends HttpServlet implements Servlet {
 		PrintWriter out = response.getWriter();
 		try {
 			InitialContext ctx = new InitialContext();
-			FuncionariosBeanRemote service = (FuncionariosBeanRemote) ctx.lookup("ejb:/Exercicio02_FuncionariosWeb/FuncionariosBean!br.com.fiap.bean.FuncionariosBeanRemote");
+			FuncionariosBeanRemote service = (FuncionariosBeanRemote) ctx.lookup("ejb:/Exercicio02_Funcionarios/FuncionariosBean!br.com.fiap.bean.FuncionariosBeanRemote");
 			List<Funcionarios> lista = service.getAll();
 			request.setAttribute("lista", lista);
 			request.getRequestDispatcher("index.jsp").forward(request, response);
@@ -56,7 +56,7 @@ public class ServletFuncionarios extends HttpServlet implements Servlet {
 		PrintWriter out = response.getWriter();
 		try {
 			InitialContext ctx = new InitialContext();
-			FuncionariosBeanRemote service = (FuncionariosBeanRemote) ctx.lookup("ejb:/Exercicio02_FuncionariosWeb/FuncionariosBean!br.com.fiap.bean.FuncionariosBeanRemote");
+			FuncionariosBeanRemote service = (FuncionariosBeanRemote) ctx.lookup("ejb:/Exercicio02_Funcionarios/FuncionariosBean!br.com.fiap.bean.FuncionariosBeanRemote");
 			Funcionarios func = new Funcionarios();
 			
 			func.setCpf(Integer.parseInt(request.getParameter("cpf")));
