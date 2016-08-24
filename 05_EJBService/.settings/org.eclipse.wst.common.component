@@ -3,5 +3,7 @@
         <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
         <wb-resource deploy-path="/" source-path="/.apt_generated"/>
         <property name="java-output-path" value="/05_EJBService/build/classes"/>
+        <property name="ClientProject" value="05_EJBServiceClient"/>
+        <property name="ClientJARURI" value="05_EJBServiceClient.jar"/>
     </wb-module>
 </project-modules>

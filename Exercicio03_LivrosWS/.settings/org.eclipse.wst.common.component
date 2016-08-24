@@ -3,5 +3,7 @@
         <wb-resource deploy-path="/" source-path="/ejbModule" tag="defaultRootSource"/>
         <wb-resource deploy-path="/" source-path="/.apt_generated"/>
         <property name="java-output-path" value="/Exercicio03_LivrosWS/build/classes"/>
+        <property name="ClientProject" value="Exercicio03_LivrosWSClient"/>
+        <property name="ClientJARURI" value="Exercicio03_LivrosWSClient.jar"/>
     </wb-module>
 </project-modules>

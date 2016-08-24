@@ -6,6 +6,7 @@
 	<persistence-unit name="fiapPU" transaction-type="JTA">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<jta-data-source>jdbc/fiap</jta-data-source>
+		<class>br.com.fiap.entity.Livros</class>
 		<properties>
 			<property name="hibernate.show_sql" value="true" />
 			<property name=" hibernate.format_sql" value="true" />
